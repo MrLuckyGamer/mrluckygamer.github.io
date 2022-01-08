@@ -1,0 +1,24 @@
+/* Avatar Image Round Fix for Awesomium/Chromium (webkit)... */
+.avatarimg {
+	width: 184px; height: 184px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.avatarimg img {
+	width: 184px; height: 184px;
+}
+.divfixavatar {
+	border: 6px solid #FFFFFF;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	overflow: hidden;
+	width: 184px;
+	height: 184px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+	box-shadow: 1px 1px 8px #191919;
+}
