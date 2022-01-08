@@ -78,7 +78,7 @@
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////
 
 	
-				Copyright (c) 2018 - Wolvindra-Vinzuerio & Lucky :: Special for Mira No Sekai.
+				Copyright (c) 2018 - Wolvindra-Vinzuerio & Lucky :: Special for Mirai No Sekai.
 								https://project.wolvindra.net
 	
 						Title: Personal Garry's Mod Loading Screen v.2
@@ -101,7 +101,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mira No Sekai</title>
+    <title>Mirai No Sekai</title>
 
     <!-- Bootstrap Core CSS & FontAwesome 4.6.3 -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
