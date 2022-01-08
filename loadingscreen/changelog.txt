@@ -1,0 +1,9 @@
+Version 3
+---------
+- Added pointshop example which grabs the player's points
+
+Version 2
+----------
+- Added Steam profile example (Grabs Steam avatar, name, etc.)
+- Moved CSS and JavaScript code to their own files
+- Cleaned up examples
