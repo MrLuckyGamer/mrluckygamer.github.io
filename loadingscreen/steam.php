@@ -6,10 +6,10 @@ define('CACHE_DIR', 'cache/');
 	Steam Web API Key required
 	http://steamcommunity.com/dev/apikey
 */
-define('STEAM_APIKEY', '0CDFF6D8270318666DB9502203E4DF5E');
+define('STEAM_APIKEY', '72EC5E6F2A47B6275D4B32091CF064AA');
 
 // Must use a valid Steam Web API key
-if ( STEAM_APIKEY === '0CDFF6D8270318666DB9502203E4DF5E') {
+if ( STEAM_APIKEY === '72EC5E6F2A47B6275D4B32091CF064AA') {
 	echo "No API key set!<br/>";
 	echo "See STEAM_APIKEY in <b><i>steam.php</i></b><br/>";
 	echo "<a href='http://steamcommunity.com/dev/apikey' target='_blank'>Get an API key here</a>";
