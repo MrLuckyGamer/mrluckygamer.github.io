@@ -13,9 +13,7 @@ $rules = [
         'No earrape and NO mic/chat spam!',
         'No human death or CP in any theaters!',
         'No bullying, harrassing.'
-
     ],
-
     'dr' => [
         'Press "F1" to learn about the gamemode',
         'Press "F2" to open the Settings Menu',
