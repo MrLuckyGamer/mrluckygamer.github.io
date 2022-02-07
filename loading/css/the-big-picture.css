@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+#wellbg {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 0;
+}
+body {
+	overflow: hidden;
+
+	font-family: "Roboto";
+	font-size: 14px;
+	line-height: 1.45;
+	color: #ffffff;
+	background: linear-gradient(to right, #8f0eaf, #aa048e);
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+h1,h2,h3,
+.h1,.h2,.h3 {
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+  text-shadow: 1px 1px 4px #222;
+}
+h4,h5,h6,
+.h4,.h5,.h6 {
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  text-shadow: 1px 1px 4px #222;
+}
+.normalise {
+	font-family: "Roboto";
+	font-size: 15px;
+	line-height: 1.45;
+	color: #ffffff;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-fw {
+    color: #ff35dd;
+}
