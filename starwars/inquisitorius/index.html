@@ -1,156 +1,144 @@
 <!DOCTYPE HTML>
-<!-- HTML5 -->
-<html>
-  <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Imperial Inquisitors</title>
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Imperial Inquisitors">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Inquisitors from Star Wars">
+  <meta property="og:url" content="https://luckydev.xyz/starwars/inquisitorius/">
+  <meta property="og:site_name" content="Archive">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    section#main {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      width: 80%;
+      max-width: 1200px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      word-wrap: break-word;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-size: 16px;
+    }
+    td {
+      font-size: 14px;
+    }
+    tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <section id="main">
+    <h1>List of Imperial Inquisitors</h1>
+    <p>Updated on 26/06/2024</p>
+    <div id="contents">
+      <h2>Canon Inquisitors</h2>
+      <table id="inquisitors">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Lightsaber(s)</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Died</th>
+            <th>Appearances</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <h2>Unidentified Inquisitors</h2>
+      <table id="unidentified_inquisitors">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Lightsaber(s)</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Died</th>
+            <th>Appearances</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 
-    <!-- Character encoding declaration -->
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="en">
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+      <h2>Non-canon Inquisitors</h2>
+      <table id="noncanon_inquisitors">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Lightsaber(s)</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Died</th>
+            <th>Appearances</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 
-    <title>List of Inquisitors</title>
-    <link rel="stylesheet" href="/style.css">
-    <!-- OGP Settings -->
-    <meta property="og:title" content="List of Inquisitors">
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="Inquisitors from Star Wars Canon">
-    <meta property="og:url" content="https://luckydev.xyz/starwars/inquisitorius/">
-    <meta property="og:site_name" content="Archive">
-    <!-- End of OGP Settings -->
-    <style>
-      body {
-        font-size: 16px; /* Set the default text size */
-      }
-
-      h1, h2, h3, h4, h5, h6 {
-        font-size: 24px; /* Set header sizes larger than default text */
-      }
-
-      section#main {
-        max-width: initial;
-        background: #eee;
-      }
-
-      table {
-        border-collapse: collapse;
-        /* background: white; */
-      }
-
-      thead, tbody, tr { margin: 0; padding: 0; }
-
-      table, thead, tbody {
-        /* display: inline-block; */
-        display: flex;
-      }
-
-      thead { width: 50px; }
-
-      tbody {
-        overflow-x: scroll;
-        overflow-y: hidden;
-      }
-
-      tr { margin-left: -1px; }
-
-      th, td { margin-top: -1px; }
-
-      th:first-child, td:first-child { margin-top: 0; }
-
-      th, td {
-        display: block;
-        border: solid black 1px;
-      }
-
-      th {
-        width: 45px;
-        text-align: right;
-      }
-
-      td {
-        width: 100px;
-        position: relative;
-        padding: 1px;
-      }
-
-      tr.narrow td {
-        width: 50px;
-      }
-
-      td:nth-child(2) img {
-        bottom: 0;
-        position: absolute;
-        z-index: 1000;
-      }
-
-      td:nth-child(2), td:nth-child(3) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      td:nth-child(3) img {
-        max-width: 100px;
-        max-height: 100px;
-      }
-
-      th, td { height: 15px; }
-
-      td ul { margin: 0; padding: 0; list-style: none; }
-
-      td ul li {
-        font-size: 0.6rem;
-        text-indent: -1em;
-        padding-left: 1em;
-      }
-
-      th:first-child, td:first-child {
-        height: 30px;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      th:nth-child(2), td:nth-child(2) { height: 250px; }
-
-      th:nth-child(3), td:nth-child(3) { height: 100px; }
-
-      th:nth-child(4), td:nth-child(4) { height: 30px; }
-
-      th:nth-child(5), td:nth-child(5) { display: none; }
-
-      th:nth-child(6), td:nth-child(6) { height: 30px; }
-
-      th:nth-child(7), td:nth-child(7) { height: 150px; }
-
-      div.spoiler {
-        margin: 0;
-        padding: 0;
-      }
-
-      .spoiler, [lang=en] {
-        display: none;
-      }
-
-      p { max-width: 800px; }
-    </style>
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <section id="main">
-      <h1><span lang="en">List of Inquisitors</span></h1>
-      <p><span lang="en">updated on 2024-05-04</span></p>
-      <p>
-        <span lang="en"><a href="#" class="spoilerSwitch fakes">Show</a><a href="#" class="spoilerSwitch spoiler">Hide</a> spoilers</span>
-      </p>
-
-      <div id="contents">
-        <table id="inquisitors">
-          <thead>
-            <tr><th><!--NAME--></th><th><!--IMG--></th><th style="writing-mode: vertical-rl; text-align:center;">Lightsaber(s)</th><th>Species</th><th>Gender</th><th>Died</th><th style="writing-mode: vertical-rl; text-align: center;">Appearance(s)</th></tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <p><a href="/">HOME</a></p>
-    </section>
-  </body>
+      <h2>Non-Inquisitors</h2>
+      <table id="non_inquisitors">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Lightsaber(s)</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Died</th>
+            <th>Appearances</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</body>
 </html>
