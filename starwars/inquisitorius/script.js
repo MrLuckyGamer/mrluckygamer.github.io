@@ -312,6 +312,20 @@ const inquisitors = [
   
   const noncanon_inquisitors = [
     new Inquisitor({
+      name: "Jerec",
+      note: "(Legends)",
+      img: "jerec.png",
+      img_w: 280,
+      img_pos: { bottom: 0, left: 0 },
+      lightsaber_img: "",
+      species: "Miraluka",
+      gender: "Male",
+      died: "5 ABY, Ruusan",
+      appearances: [
+        new Episode({ type: "animated-series", title: "" }),
+      ]
+    }),
+    new Inquisitor({
       name: "?",
       note: "(Non-canon)",
       img: "T0-B1_Inquisitor.png",
