@@ -18,84 +18,119 @@
     <meta property="og:site_name" content="Archive">
     <!-- End of OGP Settings -->
     <style>
-      section#main{
-        max-width:initial;
+      body {
+        font-size: 16px; /* Set the default text size */
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 24px; /* Set header sizes larger than default text */
+      }
+
+      section#main {
+        max-width: initial;
         background: #eee;
       }
-      table{
-        border-collapse:collapse;
-        /*background:white;*/
+
+      table {
+        border-collapse: collapse;
+        /* background: white; */
       }
-      thead,tbody,tr{margin:0;padding:0;}
-      table,thead,tbody{
-        /*display:inline-block;*/
-        display:flex;
+
+      thead, tbody, tr { margin: 0; padding: 0; }
+
+      table, thead, tbody {
+        /* display: inline-block; */
+        display: flex;
       }
-      thead{width:50px;}
-      tbody{
-        overflow-x:scroll;
-        overflow-y:hidden;
+
+      thead { width: 50px; }
+
+      tbody {
+        overflow-x: scroll;
+        overflow-y: hidden;
       }
-      tr{margin-left:-1px;}
-      th,td{margin-top:-1px;}
-      th:first-child,td:first-child{margin-top:0;}
-      th,td{
-        display:block;
-        border:solid black 1px;
+
+      tr { margin-left: -1px; }
+
+      th, td { margin-top: -1px; }
+
+      th:first-child, td:first-child { margin-top: 0; }
+
+      th, td {
+        display: block;
+        border: solid black 1px;
       }
-      th{
-        width:45px;
-        text-align:right;
+
+      th {
+        width: 45px;
+        text-align: right;
       }
-      td{
-        width:100px;
-        position:relative;
-        padding:1px;
+
+      td {
+        width: 100px;
+        position: relative;
+        padding: 1px;
       }
-      tr.narrow td{
-        width:50px;
+
+      tr.narrow td {
+        width: 50px;
       }
-      td:nth-child(2) img{
-        bottom:0;
-        position:absolute;
-        z-index:1000;
+
+      td:nth-child(2) img {
+        bottom: 0;
+        position: absolute;
+        z-index: 1000;
       }
-      td:nth-child(2),td:nth-child(3){
-        font-size: 60px;
+
+      td:nth-child(2), td:nth-child(3) {
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      td:nth-child(3) img{
-        max-width:100px;
-        max-height:100px;
+
+      td:nth-child(3) img {
+        max-width: 100px;
+        max-height: 100px;
       }
-      th,td{height:15px;}
-      td ul{margin:0; padding:0; list-style: none;}
-      td ul li{
-        font-size:0.6rem;
+
+      th, td { height: 15px; }
+
+      td ul { margin: 0; padding: 0; list-style: none; }
+
+      td ul li {
+        font-size: 0.6rem;
         text-indent: -1em;
-        padding-left:1em;
+        padding-left: 1em;
       }
-      th:first-child,td:first-child{
-        height:30px;
-        text-align:center;
-        font-weight:bold;
+
+      th:first-child, td:first-child {
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
       }
-      th:nth-child(2),td:nth-child(2){height:250px;}
-      th:nth-child(3),td:nth-child(3){height:100px;}
-      th:nth-child(4),td:nth-child(4){height:30px;}
-      th:nth-child(5),td:nth-child(5){display:none;}
-      th:nth-child(6),td:nth-child(6){height:30px;}
-      th:nth-child(7),td:nth-child(7){height:150px;}
-      div.spoiler{
-        margin:0;
-        padding:0;
+
+      th:nth-child(2), td:nth-child(2) { height: 250px; }
+
+      th:nth-child(3), td:nth-child(3) { height: 100px; }
+
+      th:nth-child(4), td:nth-child(4) { height: 30px; }
+
+      th:nth-child(5), td:nth-child(5) { display: none; }
+
+      th:nth-child(6), td:nth-child(6) { height: 30px; }
+
+      th:nth-child(7), td:nth-child(7) { height: 150px; }
+
+      div.spoiler {
+        margin: 0;
+        padding: 0;
       }
-      .spoiler, [lang=ja]{
-        display:none;
+
+      .spoiler, [lang=en] {
+        display: none;
       }
-      p{max-width:800px;}
+
+      p { max-width: 800px; }
     </style>
     <script src="./script.js"></script>
   </head>
