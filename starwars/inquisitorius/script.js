@@ -45,9 +45,9 @@ class Inquisitor {
       <td class="inq_gender">${this.gender}</td>
       <td class="inq_died">${this.died}</td>
       <td class="inq_appearances">
-        <ul>
-          ${this.appearances.map(episode => `<li>${episode.html}</li>`).join("")}
-        </ul>
+        
+          ${this.appearances.map(episode => `<li>${episode.html}</li><br>`).join("")}
+        
       </td>
     `;
     return tr;
@@ -85,7 +85,7 @@ const inquisitors = [
       gender: "Female",
       died: "14 BBY, Fortress Inquisitorius, Nur",
       appearances: [
-        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader" }),
+        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 Fortress Vader" }),
         new Episode({ type: "game", title: "Star Wars Jedi: Fallen Order" }),
       ]
     }),
@@ -109,9 +109,9 @@ const inquisitors = [
       img_w: undefined,
       img_pos: {},
       lightsaber_img: "",
-      species: "",
+      species: undefined,
       gender: "Male",
-      died: "",
+      died: undefined,
       appearances: []
     }),
     new Inquisitor({
@@ -120,7 +120,7 @@ const inquisitors = [
       img_w: 150,
       img_pos: { top: 15, left: -50 },
       lightsaber_img: "4th_l.png",
-      species: "?",
+      species: undefined,
       gender: "Female",
       died: undefined,
       appearances: [
@@ -135,7 +135,7 @@ const inquisitors = [
       img_w: 100,
       img_pos: { top: 5 },
       lightsaber_img: "5th_l.png",
-      species: "?",
+      species: undefined,
       gender: "Male",
       died: "3 BBY, Malachor",
       appearances: [
@@ -150,7 +150,7 @@ const inquisitors = [
       img_w: 80,
       img_pos: {},
       lightsaber_img: "6th_l.png",
-      species: "?",
+      species: undefined,
       gender: "Male",
       died: "18 BBY, Raada",
       appearances: [
@@ -211,7 +211,7 @@ const inquisitors = [
       gender: "Male",
       died: "18 BBY, Mon Cala",
       appearances: [
-        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.3 — The Burning Seas" }),
+        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.3 The Burning Seas" }),
       ]
     }),
     new Inquisitor({
@@ -225,7 +225,7 @@ const inquisitors = [
       died: "Coruscant, before 14 BBY",
       appearances: [
         new Episode({ type: "novel", title: "Inquisitor: Rise of the Red Blade" }),
-        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader" }),
+        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 Fortress Vader" }),
       ]
     }),
     new Inquisitor({
@@ -239,7 +239,7 @@ const inquisitors = [
       died: "Coruscant, before 14 BBY",
       appearances: [
         new Episode({ type: "novel", title: "Inquisitor: Rise of the Red Blade" }),
-        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader" }),
+        new Episode({ type: "comic", title: "Star Wars: Darth Vader (2017) Vol.4 Fortress Vader" }),
       ]
     }),
     new Inquisitor({
@@ -250,7 +250,7 @@ const inquisitors = [
       img_pos: { top: 30, left: -20 },
       species: "Mirialan",
       gender: "Female",
-      died: "",
+      died: undefined,
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
       ]
@@ -262,7 +262,7 @@ const inquisitors = [
       img_pos: { bottom: 0 },
       lightsaber_img: "Marrok_l.png",
       gender: "Male",
-      species: "?",
+      species: undefined,
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
         new Episode({ type: "live-action", title: "Ahsoka" }),
@@ -273,11 +273,11 @@ const inquisitors = [
   // Unidentified Inquisitors
   const unidentified_inquisitors = [
     new Inquisitor({
-      name: "?",
+      name: "?<div>(The Inquisitor)</div>",
       img: "ahsoka_inq.png",
       img_w: 120,
       img_pos: {},
-      species: "?",
+      species: undefined,
       gender: "Male",
       died: "Imperial era",
       appearances: [
@@ -291,7 +291,7 @@ const inquisitors = [
       img_w: undefined,
       img_pos: {},
       lightsaber_img: "Jerserra_l.png",
-      species: "?",
+      species: undefined,
       gender: "Female",
       died: "Dathomir, Imperial era",
       appearances: [
@@ -304,7 +304,7 @@ const inquisitors = [
       img_w: undefined,
       img_pos: {},
       lightsaber_img: "",
-      species: "?",
+      species: undefined,
       gender: "?",
       died: undefined,
       appearances: [
@@ -325,9 +325,7 @@ const inquisitors = [
       species: "Miraluka",
       gender: "Male",
       died: "5 ABY, Ruusan",
-      appearances: [
-        new Episode({ type: "animated-series", title: "" }),
-      ]
+      appearances: []
     }),
     new Inquisitor({
       name: "?",
@@ -336,7 +334,7 @@ const inquisitors = [
       img_w: 280,
       img_pos: { bottom: 20, left: -130 },
       lightsaber_img: "",
-      species: "?",
+      species: undefined,
       gender: "?",
       died: "Imperial Era, T0-B1's home planet",
       appearances: [
@@ -350,7 +348,7 @@ const inquisitors = [
       img_w: 110,
       img_pos: { bottom: 0, left: 0 },
       lightsaber_img: "visions2_l.png",
-      species: "?",
+      species: undefined,
       gender: "Male",
       died: "Imperial Era, Golak",
       appearances: [
@@ -383,7 +381,7 @@ const inquisitors = [
       img_w: 150,
       img_pos: { bottom: 30, left: -10 },
       lightsaber_img: "",
-      species: "?",
+      species: undefined,
       gender: "Female",
       died: undefined,
       appearances: [
@@ -405,7 +403,6 @@ const inquisitors = [
     }),
   ];
   
-
   window.addEventListener("load", () => {
     const inquisitor_tbody = document.querySelector("table#inquisitors tbody");
     const unidentified_inquisitor_tbody = document.querySelector("table#unidentified_inquisitors tbody");
