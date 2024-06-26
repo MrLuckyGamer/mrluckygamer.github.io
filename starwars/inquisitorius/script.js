@@ -33,13 +33,14 @@ class Inquisitor {
       if (this.img_pos[pos]) img_css += ` ${pos}:${this.img_pos[pos]}px;`;
     });
     if (this.img_pos["z-index"]) img_css += ` z-index:${this.img_pos["z-index"]};`;
-    const img_html = this.img ? `<img src="./img/${this.img}" style="${img_css}">` : "";
+    const img_html = this.img ? `<div class="centered-image"><img src="./img/${this.img}" style="${img_css}"></div>` : "";
+    const saber_html = this.lightsaber_img ? `<div class="centered-image"><img src="./img/${this.lightsaber_img}"></div>` : "";
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="inq_name">${this.name}${this.note ? `<div>${this.note}</div>` : ""}</td>
       <td class="inq_img">${img_html}</td>
-      <td class="inq_saber">${this.lightsaber_img ? `<img src="./img/${this.lightsaber_img}">` : ""}</td>
+      <td class="inq_saber">${saber_html}</td>
       <td class="inq_species">${this.species}</td>
       <td class="inq_gender">${this.gender}</td>
       <td class="inq_died">${this.died}</td>
