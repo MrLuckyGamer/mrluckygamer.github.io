@@ -356,14 +356,14 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "Gwobus",
+      name: "የፍጆታ ጌታ",
       note: "(Gwobus the Devourer)",
       img: "gwobus.png",
       img_w: 110,
       img_pos: { bottom: 0, left: 0 },
       lightsaber_img: "",
       species: "Sith Wraith",
-      gender: "Male",
+      gender: "Non-Binary",
       died: undefined,
       appearances: [
         new Episode({ type: "animated-series", title: "Gateway Gaming Star Wars Roleplay" }),
