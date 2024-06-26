@@ -54,8 +54,9 @@ class Inquisitor {
 }
 
 // Inquisitor data
-const inquisitors = [
 
+// Canon Inquisitors
+const inquisitors = [
     new Inquisitor({
       name: "The Grand Inquisitor",
       img: "1st.png",
@@ -113,7 +114,7 @@ const inquisitors = [
       appearances: []
     }),
     new Inquisitor({
-      name: "4th Sister<div>(Lyn)</div>",
+      name: "4th Sister<div>(Lyn Rakish)</div>",
       img: "4th.png",
       img_w: 150,
       img_pos: { top: 15, left: -50 },
@@ -267,7 +268,8 @@ const inquisitors = [
       ]
     }),
   ];
-  
+
+  // Unidentified Inquisitors
   const unidentified_inquisitors = [
     new Inquisitor({
       name: "?",
@@ -309,7 +311,8 @@ const inquisitors = [
       ]
     }),
   ];
-  
+
+  // Legends Inquisitors
   const noncanon_inquisitors = [
     new Inquisitor({
       name: "Jerec",
@@ -354,7 +357,8 @@ const inquisitors = [
       ]
     }),
   ];
-  
+
+  // Non Inquisitors
   const non_inquisitors = [
     new Inquisitor({
       name: "M-OC",
