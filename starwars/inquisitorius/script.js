@@ -61,7 +61,6 @@ const inquisitors = [
     new Inquisitor({
       name: "The Grand Inquisitor",
       img: "1st.png",
-      img_src: "https://advancedgraphics.com/grand-inquisitor-lifesize-cardboard-cutout-standee-3924/",
       img_w: 125,
       img_pos: { top: 10, left: -25 },
       lightsaber_img: "1st_l.png",
@@ -76,7 +75,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "2nd Sister<div>(Trilla Suduri)</div>",
+      name: "2nd Sister",
+      note: "(Trilla Suduri)",
       img: "2nd.png",
       img_w: 120,
       img_pos: { top: 25, left: -10 },
@@ -90,39 +90,41 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "3rd Sister<div>(Reva Sevander)</div>",
+      name: "3rd Sister",
+      note: "(Reva Sevander)",
       img: "3rd.png",
-      img_src: "https://advancedgraphics.com/reva-third-sister-lifesize-cardboard-cutout-standee-3927/",
       img_w: 85,
       img_pos: { top: 20, left: 10 },
       lightsaber_img: "3rd_l.png",
       species: "Human",
       gender: "Female",
-      died: "",
+      died: "Unknown",
       appearances: [
         new Episode({ type: "live-action", title: "Star Wars: Obi-Wan Kenobi" }),
       ]
     }),
     new Inquisitor({
       name: "3rd Brother?",
+      note: "",
       img: "",
-      img_w: undefined,
+      img_w: "Unknown",
       img_pos: {},
       lightsaber_img: "",
-      species: undefined,
+      species: "Unknown",
       gender: "Male",
-      died: undefined,
+      died: "Unknown",
       appearances: []
     }),
     new Inquisitor({
-      name: "4th Sister<div>(Lyn Rakish)</div>",
+      name: "4th Sister",
+      note: "(Lyn Rakish)",
       img: "4th.png",
       img_w: 150,
       img_pos: { top: 15, left: -50 },
       lightsaber_img: "4th_l.png",
-      species: undefined,
+      species: "Unknown",
       gender: "Female",
-      died: undefined,
+      died: "Unknown",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
         new Episode({ type: "live-action", title: "Star Wars: Obi-Wan Kenobi" }),
@@ -130,12 +132,12 @@ const inquisitors = [
     }),
     new Inquisitor({
       name: "5th Brother",
+      note: "",
       img: "5th.png",
-      img_src: "https://advancedgraphics.com/fith-brother-lifesize-cardboard-cutout-standee-3928/",
       img_w: 100,
       img_pos: { top: 5 },
       lightsaber_img: "5th_l.png",
-      species: undefined,
+      species: "Unknown",
       gender: "Male",
       died: "3 BBY, Malachor",
       appearances: [
@@ -145,12 +147,13 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "6th Brother<div>(Bil Valen)</div>",
+      name: "6th Brother",
+      note: "(Bil Valen)",
       img: "6th.png",
       img_w: 80,
       img_pos: {},
       lightsaber_img: "6th_l.png",
-      species: undefined,
+      species: "Unknown",
       gender: "Male",
       died: "18 BBY, Raada",
       appearances: [
@@ -160,6 +163,7 @@ const inquisitors = [
     }),
     new Inquisitor({
       name: "7th Sister",
+      note: "",
       img: "7th.png",
       img_w: 120,
       img_pos: { bottom: -20, left: -20 },
@@ -174,6 +178,7 @@ const inquisitors = [
     }),
     new Inquisitor({
       name: "8th Brother",
+      note: "",
       img: "8th.png",
       img_w: 80,
       img_pos: { bottom: -10, left: -10 },
@@ -187,7 +192,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "9th Sister<div>(Masana Tide)</div>",
+      name: "9th Sister",
+      note: "(Masana Tide)",
       img: "js_9th.png",
       img_w: 200,
       img_pos: { bottom: -10, right: -40, "z-index": 2000 },
@@ -202,7 +208,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "10th Brother<div>(Prosset Dibs)</div>",
+      name: "10th Brother",
+      note: "(Prosset Dibs)",
       img: "10th.png",
       img_w: 95,
       img_pos: { bottom: 22, right: -15 },
@@ -215,7 +222,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "13th Sister<div>(Iskat Akaris)</div>",
+      name: "13th Sister",
+      note: "(Iskat Akaris)",
       img: "uf.png",
       img_w: 85,
       img_pos: { bottom: 35, right: 0, "z-index": 20000 },
@@ -229,7 +237,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "14th Brother<div>(Tualon Yaluna)</div>",
+      name: "14th Brother",
+      note: "(Tualon Yaluna)",
       img: "Tualon.png",
       img_w: 180,
       img_pos: { bottom: 0, left: -50, "z-index": 10000 },
@@ -244,25 +253,26 @@ const inquisitors = [
     }),
     new Inquisitor({
       name: "Barriss Offee",
+      note: "",
       img: "barriss.png",
-      img_src: "https://www.youtube.com/watch?v=8SIST9t72kY",
       img_w: 130,
       img_pos: { top: 30, left: -20 },
       species: "Mirialan",
       gender: "Female",
-      died: undefined,
+      died: "Unknown",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
       ]
     }),
     new Inquisitor({
       name: "Marrok",
+      note: "",
       img: "Marrok.png",
       img_w: 220,
       img_pos: { bottom: 0 },
       lightsaber_img: "Marrok_l.png",
       gender: "Male",
-      species: undefined,
+      species: "Unknown",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
         new Episode({ type: "live-action", title: "Ahsoka" }),
@@ -273,11 +283,13 @@ const inquisitors = [
   // Unidentified Inquisitors
   const unidentified_inquisitors = [
     new Inquisitor({
-      name: "?<div>(The Inquisitor)</div>",
+      name: "?",
+      note: "(The Inquisitor)",
       img: "ahsoka_inq.png",
       img_w: 120,
       img_pos: {},
-      species: undefined,
+      lightsaber_img: "Jerserra_l.png",
+      species: "Unknown",
       gender: "Male",
       died: "Imperial era",
       appearances: [
@@ -286,12 +298,13 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "(Jerserra's master)",
+      name: "?",
+      note: "(Jerserra's master)",
       img: "",
-      img_w: undefined,
+      img_w: "Unknown",
       img_pos: {},
       lightsaber_img: "Jerserra_l.png",
-      species: undefined,
+      species: "Unknown",
       gender: "Female",
       died: "Dathomir, Imperial era",
       appearances: [
@@ -300,13 +313,14 @@ const inquisitors = [
     }),
     new Inquisitor({
       name: "?",
+      note: "",
       img: "",
-      img_w: undefined,
+      img_w: "Unknown",
       img_pos: {},
       lightsaber_img: "",
-      species: undefined,
+      species: "Unknown",
       gender: "?",
-      died: undefined,
+      died: "Unknown",
       appearances: [
         new Episode({ type: "mobile game", title: "Star Wars: Uprising", note: " (Mentioned only)" }),
       ]
@@ -334,7 +348,7 @@ const inquisitors = [
       img_w: 280,
       img_pos: { bottom: 20, left: -130 },
       lightsaber_img: "",
-      species: undefined,
+      species: "Unknown",
       gender: "?",
       died: "Imperial Era, T0-B1's home planet",
       appearances: [
@@ -348,7 +362,7 @@ const inquisitors = [
       img_w: 110,
       img_pos: { bottom: 0, left: 0 },
       lightsaber_img: "visions2_l.png",
-      species: undefined,
+      species: "Unknown",
       gender: "Male",
       died: "Imperial Era, Golak",
       appearances: [
@@ -364,7 +378,7 @@ const inquisitors = [
       lightsaber_img: "",
       species: "Sith Wraith",
       gender: "Non-Binary",
-      died: undefined,
+      died: "Unknown",
       appearances: [
         new Episode({ type: "animated-series", title: "Gateway Gaming Star Wars Roleplay" }),
       ]
@@ -385,7 +399,7 @@ const inquisitors = [
       died: "4 ABY, Death Star II (Non-canon)",
       appearances: [
         new Episode({ type: "book", title: "Droidography" }),
-        new Episode({ type: "", title: "LEGO Star Wars: The Freemaker Adventures" }),
+        new Episode({ type: "Unknown", title: "LEGO Star Wars: The Freemaker Adventures" }),
       ]
     }),
     new Inquisitor({
@@ -395,22 +409,23 @@ const inquisitors = [
       img_w: 150,
       img_pos: { bottom: 30, left: -10 },
       lightsaber_img: "",
-      species: undefined,
+      species: "Unknown",
       gender: "Female",
-      died: undefined,
+      died: "Unknown",
       appearances: [
-        new Episode({ type: "", title: "LEGO Star Wars: The Freemaker Adventures" }),
+        new Episode({ type: "Unknown", title: "LEGO Star Wars: The Freemaker Adventures" }),
       ]
     }),
     new Inquisitor({
-      name: "4th Sister<div>(Lina Graf)</div><div>(Impersonated)</div>",
+      name: "4th Sister",
+      note: "<div>(Impersonated)</div><div>(Lina Graf)</div>",
       img: "LinaGraf.png",
       img_w: 95,
       img_pos: { top: 10, left: 5 },
       lightsaber_img: "",
       species: "Human",
       gender: "Female",
-      died: undefined,
+      died: "Unknown",
       appearances: [
         new Episode({ type: "comic", title: "Star Wars Adventures: Return to Vader's Castle" }),
       ]
