@@ -237,8 +237,8 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "14th Brother",
-      note: "(Tualon Yaluna)",
+      name: "Tualon Yaluna",
+      note: "(14th Brother?)",
       img: "Tualon.png",
       img_w: 180,
       img_pos: { bottom: 0, left: -50, "z-index": 10000 },
