@@ -11,7 +11,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #790000 url('') repeat;
+      background: #790000 url('https://i.imgur.com/w8OPKwc.png') repeat;
       margin: 0;
       padding: 0;
       display: flex;
@@ -29,10 +29,25 @@
       max-width: 1200px;
       margin-top: 20px;
       margin-bottom: 15px;
+      position: relative;
     }
-    h1 {
-      font-size: 34px;
+    .header {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
       margin-bottom: 10px;
+      position: relative;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+    .header img {
+      position: absolute;
+      right: 0;
+      top: 125%;
+      transform: translateY(-50%);
+      max-height: 190px;
     }
     p {
       margin: 10px 0;
@@ -80,12 +95,15 @@
       color: #fff;
       padding: 10px 0;
     }
-  </style>  
+  </style> 
   <script src="./script.js" defer></script>
 </head>
 <body>
   <section id="main">
-    <h1>List of Imperial Inquisitors</h1>
+    <div class="header">
+      <h1>List of Imperial Inquisitors</h1>
+      <img src="https://i.imgur.com/XTBvgGR.png" alt="Logo">
+    </div>
     <p>Updated on 26/06/2024</p>
     <div id="contents">
       <h2>Canon Inquisitors</h2>
@@ -120,7 +138,7 @@
         <tbody></tbody>
       </table>
 
-      <h2>Non-canon Inquisitors</h2>
+      <h2>Non-Canon Inquisitors</h2>
       <table id="noncanon_inquisitors">
         <thead>
           <tr>
