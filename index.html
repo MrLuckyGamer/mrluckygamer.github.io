@@ -13,206 +13,181 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 <!DOCTYPE html>
-<html>
-    <link rel="shortcut icon" href="https://luckydev.xyz/favicon.ico?t=1591226065">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucky - Lua Developer, Content Creator, and Website Developer">
+    <meta name="author" content="LuckyDev LLC">
     <title>Lucky | Development Site</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Theme CSS -->
+    <!-- Custom CSS -->
     <link href="public/styles.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    
+    <link rel="icon" href="https://luckydev.xyz/favicon.ico" type="image/x-icon">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="">
-                    <img src="public/icon.svg" class="brand-img" alt="lucky symbol">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="public/icon.svg" alt="Lucky symbol" class="brand-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading"><span class="avatar"><img src="public/images/avatar.png" alt="" /></span>
-                    <br>
-                    <br>
-                    <h1>Lucky</h1>
-                    <br>
-                    <h3>Lua Developer &nbsp;&bull;&nbsp; Content Creator &nbsp;&bull;&nbsp; Website Developer</h3></h1>
-            </div>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center" style="background-image: url('public/images/bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container d-flex align-items-center flex-column">
+            <img src="public/images/avatar.png" alt="Avatar" style="width: 150px;">
+            <h1 class="display-4">Lucky</h1>
+            <p class="lead">Lua Developer &bull; Content Creator &bull; Website Developer</p>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-heading text-uppercase">Who Am I</h2>
+            <hr class="my-4">
+            <p class="text-muted">I am Lucky and this is my solo man development site for public and private projects in coding languages like Lua/GLua, HTML, CSS, PHP, Python, and JavaScript. My goal is to provide a place for IT professionals and enthusiasts to strengthen and share their development skills while meeting like-minded individuals.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading text-uppercase">What I Do</h2>
+            <hr class="my-4">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Who Am I</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        I am Lucky and this is my solo man development site for public and private 
-                        projects in forms of coding languages like Lua/GLua, HTML, CSS, PHP, Python and JavaScript.
-                        With the common goal of providing a place for IT professionals and enthusiasts to
-                        strengthen and share their development skills while meeting other like minded individuals.
-                    </p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fab fa-html5 fa-4x text-primary mb-3"></i>
+                        <h3 class="mb-3">Website Development</h3>
+                        <p class="text-muted">I have 9 years of experience in website development.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-code fa-4x text-primary mb-3"></i>
+                        <h3 class="mb-3">Lua/GLua Development</h3>
+                        <p class="text-muted">I have been coding with Lua and GLua for 7 years.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-tv fa-4x text-primary mb-3"></i>
+                        <h3 class="mb-3">Create Content</h3>
+                        <p class="text-muted">I create public and private gaming and personal content.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-map fa-4x text-primary mb-3"></i>
+                        <h3 class="mb-3">Source Mapping</h3>
+                        <p class="text-muted">I have simple knowledge of Garry's Mod / Source Mapping and am building on this.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What I Do</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-html5 text-primary sr-icons"></i>
-                        <h3>Website Development</h3>
-                        <p class="text-muted">I have 9 years experience in website development.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-code text-primary sr-icons"></i>
-                        <h3>Lua/GLua Development</h3>
-                        <p class="text-muted">I have been coding with Lua and GLua for 7 years.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-television text-primary sr-icons"></i>
-                        <h3>Create Content</h3>
-                        <p class="text-muted">I create public and private gaming and personal content.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-map text-primary sr-icons"></i>
-                        <h3>Source Mapping</h3>
-                        <p class="text-muted">I have simple knowledge on Garry's Mod / Source Mapping and am building on this.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="no-padding" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My Projects (OUTDATED)</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-heading text-uppercase">My Projects</h2>
+            <hr class="my-4">
+            <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6">
                     <a href="https://prophuntenhanced.xyz/" target="_blank" class="portfolio-box">
-                        <img src="public/images/pheweb.jpg" class="img-responsive" alt="">
+                        <img src="public/images/pheweb.jpg" class="img-fluid" alt="PropHunt: Enhanced Website">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Website 
-                                </div>
-                                <div class="project-name">
-                                    PropHunt: Enhanced Website
-                                </div>
+                                <div class="project-category text-white-50">HTML, PHP, CSS, JAVASCRIPT</div>
+                                <div class="project-name">PropHunt: Enhanced Website</div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1758906555" target="_blank" class="portfolio-box">
-                        <img src="public/images/phegm.jpg" class="img-responsive" alt="">
+                        <img src="public/images/ph.jpg" class="img-fluid" alt="PropHunt: Enhanced Gamemode">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Garry's Mod (LUA/GLUA)
-                                </div>
-                                <div class="project-name">
-                                    PropHunt: Enhanced Gamemode
-                                </div>
+                                <div class="project-category text-white-50">Garry's Mod (LUA/GLUA)</div>
+                                <div class="project-name">PropHunt: Enhanced Gamemode</div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://www.gmodstore.com/market/view/easy-load" target="_blank" class="portfolio-box">
-                        <img src="public/images/EasyLoad.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Loading Screen (HTML, PHP, CSS, JAVASCRIPT)
-                                </div>
-                                <div class="project-name">
-                                    A loading screen made by me, sold on gmodstore
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-		<div class="col-lg-4 col-sm-6">
                     <a href="https://web.archive.org/web/20201001121119/https://www.ranchrp.net/" target="_blank" class="portfolio-box">
-                        <img src="public/images/ranch.jpg" class="img-responsive" alt="">
+                        <img src="public/images/ranch.jpg" class="img-fluid" alt="RanchRP Forums Modifications">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    MYBB (HTML, PHP, CSS)
-                                </div>
-                                <div class="project-name">
-                                    RanchRP Forums Modifications
-                                </div>
+                                <div class="project-category text-white-50">MYBB (HTML, PHP, CSS)</div>
+                                <div class="project-name">RanchRP Forums Modifications</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://mint-as.com.au/" target="_blank" class="portfolio-box">
+                        <img src="public/images/mint.jpg" class="img-fluid" alt="MINT Auto Styling Website">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-white-50">HTML, PHP, CSS</div>
+                                <div class="project-name">MINT Auto Styling Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3222030009" target="_blank" class="portfolio-box">
+                        <img src="public/images/anaxes.jpg" class="img-fluid" alt="rp_anaxes_gg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-white-50">HAMMER, SOURCE MAP</div>
+                                <div class="project-name">rp_anaxes_gg</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3037513684" target="_blank" class="portfolio-box">
+                        <img src="public/images/alin.jpg" class="img-fluid" alt="rp_titan_rishi_alin_gg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-white-50">HAMMER, SOURCE MAP</div>
+                                <div class="project-name">rp_titan_rishi_alin_gg</div>
                             </div>
                         </div>
                     </a>
@@ -221,41 +196,36 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading text-uppercase">Get In Contact</h2>
+            <hr class="my-4">
+            <p class="mb-5">Please follow any of the links below to contact me and see my work. You can also contact me on Discord @ luckyyyyyyyy</p>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Get In Contact</h2>
-                    <hr class="primary">
-                    <p>
-                        Please be sure to follow any of the links below in order to contact me and to see my work.
-                    </p>
-                    <p>
-                        You can also contact me on Discord @ Lucky!#8660 / luckyyyyyyyy
-                    </p>
+                <div class="col-lg-6 mb-4">
+                    <a href="https://github.com/MrLuckyGamer" target="_blank" class="btn btn-dark btn-lg">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <a href="https://steamcommunity.com/id/luckywolfire/" target="_blank"><i class="fa fa-steam fa-5x"></i></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="https://github.com/MrLuckyGamer" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+                <div class="col-lg-6 mb-4">
+                    <a href="https://steamcommunity.com/id/luckywolfire/" target="_blank" class="btn btn-dark btn-lg">
+                        <i class="fab fa-steam"></i> Steam
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-                  <!-- Footer -->
-                    <center>
-                        <footer id="footer">
-                           <span class="copyright">Copyright © 2024, <a href="https://luckydev.xyz/">luckydev.xyz</a>, LLC.</span>
-                           <hr>
-			   <br>
-                        </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <p>&copy; 2024 LuckyDev LLC. All rights reserved.</p>
+            <p>For all questions and inquiries, please visit the contact page.</p>
+        </div>
+    </footer>
 
-    <!-- Theme JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- Bootstrap 5 JavaScript & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
