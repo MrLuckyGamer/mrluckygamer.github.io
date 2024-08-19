@@ -216,6 +216,17 @@ header p.lead {
   margin-bottom: 1rem;
 }
 
+.discord-tag {
+    font-weight: bold;
+    color: #7289da;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.discord-tag:hover {
+    color: #5865f2;
+    text-shadow: 0px 0px 10px rgba(88, 101, 242, 0.8);
+}
+
 /* Footer */
 footer {
   background-color: #343a40;
