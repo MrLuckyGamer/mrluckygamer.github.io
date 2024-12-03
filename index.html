@@ -196,27 +196,47 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2 class="section-heading text-uppercase">Get In Contact</h2>
-            <hr class="my-4">
-            <p class="mb-5">Please follow any of the links below to contact me and see my work.</p>
-	    <p class="mb-5">You can also contact me on Discord @ <span class="discord-tag">luckyyyyyyyy</span></p>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="section-heading text-uppercase">Get In Contact</h2>
+        <hr class="my-4">
+        <p class="mb-5">Please fill out the form below to get in touch with me.</p>
+        
+        <!-- Contact Form -->
+        <form action="send_message.php" method="POST">
             <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <a href="https://github.com/MrLuckyGamer" target="_blank" class="btn btn-dark btn-lg">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+                <div class="col-md-6 mb-4">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
-                <div class="col-lg-6 mb-4">
-                    <a href="https://steamcommunity.com/id/luckywolfire/" target="_blank" class="btn btn-dark btn-lg">
-                        <i class="fab fa-steam"></i> Steam
-                    </a>
+                <div class="col-md-6 mb-4">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-12 mb-4">
+                    <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                 </div>
             </div>
+        </form>
+
+        <!-- Contact Links -->
+        <p class="mb-5">You can also contact me on Discord @ <span class="discord-tag">luckyyyyyyyy</span></p>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <a href="https://github.com/MrLuckyGamer" target="_blank" class="btn btn-dark btn-lg">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <a href="https://steamcommunity.com/id/luckywolfire/" target="_blank" class="btn btn-dark btn-lg">
+                    <i class="fab fa-steam"></i> Steam
+                </a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white-50 text-center">
