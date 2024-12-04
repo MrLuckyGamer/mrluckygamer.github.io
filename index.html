@@ -14,17 +14,16 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lucky - Lua Developer, Content Creator, and Website Developer">
     <meta name="author" content="LuckyDev">
     <title>Lucky | Development Site</title>
-
+    
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome 6 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -33,10 +32,9 @@
 
     <!-- Custom CSS -->
     <link href="public/styles.css" rel="stylesheet">
-
+    
     <link rel="icon" href="https://luckydev.xyz/favicon.ico" type="image/x-icon">
 </head>
-
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
     <!-- Navigation -->
@@ -45,8 +43,7 @@
             <a class="navbar-brand" href="/">
                 <img src="public/icon.svg" alt="Lucky symbol" class="brand-img">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -79,9 +76,7 @@
         <div class="container text-center">
             <h2 class="section-heading text-uppercase">Who Am I</h2>
             <hr class="my-4">
-            <p class="text-muted">
-                Hi, I'm Lucky, a 22-year-old developer from Australia. Welcome to my solo development site, where I showcase my work in various coding languages, including Lua/GLua, HTML, CSS, PHP, Python, and JavaScript. This platform serves as both a portfolio of my projects and a community space for IT professionals and enthusiasts. My goal is to help others strengthen their development skills, connect with like-minded individuals who share a passion for coding, and provide affordable code solutions for your projects and needs.
-            </p>
+            <p class="text-muted">Hi, I'm Lucky, a 22-year-old developer from Australia. Welcome to my solo development site, where I showcase my work in various coding languages, including Lua/GLua, HTML, CSS, PHP, Python, and JavaScript. This platform serves as both a portfolio of my projects and a community space for IT professionals and enthusiasts. My goal is to help others strengthen their development skills, connect with like-minded individuals who share a passion for coding, and provide affordable code solutions for your projects and needs.</p>
         </div>
     </section>
 
@@ -174,12 +169,23 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://thelua.store/" target="_blank" class="portfolio-box">
-                        <img src="public/images/lua.jpg" class="img-fluid" alt="The Lua Store">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3222030009" target="_blank" class="portfolio-box">
+                        <img src="public/images/anaxes.jpg" class="img-fluid" alt="rp_anaxes_gg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-white-50">PHP, HTML, CSS</div>
-                                <div class="project-name">The Lua Store</div>
+                                <div class="project-category text-white-50">HAMMER, SOURCE MAP</div>
+                                <div class="project-name">rp_anaxes_gg</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3037513684" target="_blank" class="portfolio-box">
+                        <img src="public/images/alin.jpg" class="img-fluid" alt="rp_titan_rishi_alin_gg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-white-50">HAMMER, SOURCE MAP</div>
+                                <div class="project-name">rp_titan_rishi_alin_gg</div>
                             </div>
                         </div>
                     </a>
@@ -188,24 +194,60 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2 class="section-heading text-uppercase">Contact Me</h2>
-            <hr class="my-4">
-            <p class="text-muted">Feel free to reach out if you'd like to collaborate or simply have a question. I'm always open to new opportunities!</p>
-            <a href="mailto:lucky@luckydev.xyz" class="btn btn-primary">Email Me</a>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="section-heading text-uppercase">Get In Contact</h2>
+        <hr class="my-4">
+        <p class="mb-5">Please fill out the form below to get in touch with me.</p>
+        
+<!-- Contact Form -->
+<form action="send_message.php" method="POST">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
         </div>
-    </section>
+        <div class="col-md-6 mb-4">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12 mb-4">
+            <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </div>
+    </div>
+</form>
+
+	    <br>
+	    <br>
+	    
+        <!-- Contact Links -->
+        <p class="mb-5">You can also contact me on Discord @ <span class="discord-tag">luckyyyyyyyy</span></p>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <a href="https://github.com/MrLuckyGamer" target="_blank" class="btn btn-dark btn-lg">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <a href="https://steamcommunity.com/id/luckywolfire/" target="_blank" class="btn btn-dark btn-lg">
+                    <i class="fab fa-steam"></i> Steam
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2020 - 2024 LuckyDev | All Rights Reserved</p>
+    <footer class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <p>&copy; 2024 LuckyDev. All rights reserved.</p>
+            <p>For all questions and inquiries, please visit the contact page.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS & Dependencies -->
+    <!-- Bootstrap 5 JavaScript & Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
