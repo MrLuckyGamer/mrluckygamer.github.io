@@ -222,6 +222,21 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
+      name: "11th Brother",
+      note: "(The Inquisitor)",
+      img: "ahsoka_inq.png",
+      img_w: 120,
+      img_pos: {},
+      lightsaber_img: "",
+      species: "Unknown",
+      gender: "Male",
+      died: "Imperial era",
+      appearances: [
+        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
+        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Jedi" }),
+      ]
+    }),
+    new Inquisitor({
       name: "13th Sister",
       note: "(Iskat Akaris)",
       img: "uf.png",
@@ -284,8 +299,8 @@ const inquisitors = [
   const unidentified_inquisitors = [
     new Inquisitor({
       name: "?",
-      note: "(The Inquisitor)",
-      img: "ahsoka_inq.png",
+      note: "",
+      img: "killed_by_ventress.png",
       img_w: 120,
       img_pos: {},
       lightsaber_img: "",
@@ -293,8 +308,7 @@ const inquisitors = [
       gender: "Male",
       died: "Imperial era",
       appearances: [
-        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
-        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Jedi" }),
+        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Underworld" }),
       ]
     }),
     new Inquisitor({
