@@ -75,6 +75,21 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
+      name: "1st Brother",
+      note: "(Marrok)",
+      img: "Marrok.png",
+      img_w: 220,
+      img_pos: { bottom: 0 },
+      lightsaber_img: "Marrok_l.png",
+      gender: "Male",
+      species: "Unknown",
+      died: "9 ABY, Seatos",
+      appearances: [
+        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
+        new Episode({ type: "live-action", title: "Ahsoka" }),
+      ]
+    }),
+    new Inquisitor({
       name: "2nd Sister",
       note: "(Trilla Suduri)",
       img: "2nd.png",
@@ -122,7 +137,7 @@ const inquisitors = [
       img_w: 150,
       img_pos: { top: 15, left: -50 },
       lightsaber_img: "4th_l.png",
-      species: "Unknown",
+      species: "Nogratu",
       gender: "Female",
       died: "Unknown",
       appearances: [
@@ -279,20 +294,6 @@ const inquisitors = [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
       ]
     }),
-    new Inquisitor({
-      name: "Marrok",
-      note: "",
-      img: "Marrok.png",
-      img_w: 220,
-      img_pos: { bottom: 0 },
-      lightsaber_img: "Marrok_l.png",
-      gender: "Male",
-      species: "Unknown",
-      appearances: [
-        new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
-        new Episode({ type: "live-action", title: "Ahsoka" }),
-      ]
-    }),
   ];
 
   // Unidentified Inquisitors
@@ -301,7 +302,7 @@ const inquisitors = [
       name: "?",
       note: "",
       img: "killed_by_ventress.png",
-      img_w: 120,
+      img_w: 180,
       img_pos: {},
       lightsaber_img: "",
       species: "Unknown",
