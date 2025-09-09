@@ -256,7 +256,7 @@ const inquisitors = [
       img: "ahsoka_inq.png",
       img_w: 120,
       img_pos: {},
-      lightsaber_img: "",
+      lightsaber_img: "11th_l.png",
       species: "Unknown",
       gender: "Male",
       died: "Imperial era",
